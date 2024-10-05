@@ -1,0 +1,45 @@
+.typing-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; // Full viewport height
+  padding: 20px;
+}
+
+.paragraph-box {
+  flex-grow: 1; // Take up the available vertical space
+  max-height: 300px; // Limit height of paragraph area
+  overflow-y: scroll; // Make the paragraph scrollable
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.typing-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  &:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+}
+
+.input-container {
+  position: fixed; // Make this container fixed at the bottom of the viewport
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #f9f9f9; // Keep this optional if you want contrast
+}
