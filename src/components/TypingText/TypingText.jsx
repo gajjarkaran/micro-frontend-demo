@@ -8,7 +8,7 @@ const TypingText = () => {
 
     const fetchPara = async () => {
         try {
-            const response = await fetch("http://metaphorpsum.com/sentences/300");
+            const response = await fetch("http://metaphorpsum.com/sentences/100");
             const data = await response.text();
             setTypingText(data);
         }
@@ -27,7 +27,6 @@ const TypingText = () => {
             <div className="paragraph-box">
                 {typingText}
             </div>
-
             {/* Fixed Input Box */}
             <div className="input-container">
                 <input
