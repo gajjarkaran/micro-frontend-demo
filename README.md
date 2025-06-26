@@ -1,5 +1,7 @@
 # 🚀 Micro Frontend Demo
 
+> **Last Updated:** December 2024
+
 A simple micro frontend application demonstrating Module Federation with React. This project consists of a container application that loads three independent micro frontends: Header, Content, and Footer.
 
 ## 📁 Project Structure
